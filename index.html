@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>XP Calculator</h1>
+        <form>
+            <label for="hours">Enter Hours:</label>
+            <input type="number" id="hours" placeholder="Hours" min="0" onchange="calculateXP()">
+
+            <label for="minutes">Enter Minutes:</label>
+            <input type="number" id="minutes" placeholder="Minutes" min="0" max="59" onchange="calculateXP()">
+        </form>
+
+        <div id="result">XP will appear here</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
